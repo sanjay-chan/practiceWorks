@@ -13,7 +13,7 @@ function even(array){
 
 console.log(even(array));
 
-let array1=[625,763,66,736,44,23,22,37];
+let array1=[23,46,54,736,44,23,22,37];
 
 function odd(array1){
     let output=array1.filter(x=>x%2===0)
