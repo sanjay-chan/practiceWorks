@@ -1,11 +1,11 @@
 const originalString="reverseString";
 function ReverseString(str){
-    let newString="";
-    for(let i=str.length-1;i>=0;i--){
-        newString=+str[i];
+    let reversedString ="";
+    for(let i =str.length-1; i>=0; i--){
+        reversedString +=str[i];
 
     }
-    return newString;
+    return reversedString;
 }
 const result =ReverseString(originalString);
 console.log(result);
