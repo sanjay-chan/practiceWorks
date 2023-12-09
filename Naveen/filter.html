@@ -1,0 +1,329 @@
+<html>
+    <heaad>
+        <title>filters in html</title>
+    </head>
+    <h1>javascript exercises</h1>
+    <body bgcolor="orange" >
+
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed aperiam dolore aspernatur suscipit quas accusantium et quae corrupti enim nobis. Beatae.</p>
+        <!-- filters -->
+        <script>
+
+            var nums = [1,2,4,34,3,4,2,6,6,9,2,23,44,]
+            var even =nums.filter(function(ele){
+          return ele%2 == 0
+
+            })
+            console.log(nums)
+            console.log(even)
+
+
+        // variables
+
+     var a = 10;
+     var b = 20;
+     const c = 2;
+
+    
+    // functions
+    function naveen(){
+    document.write("this is functions in javascript");
+    
+    }
+
+    naveen();
+
+
+//    stringconcatenation
+
+    var fname = "naveen";
+    var lname = "naidu";
+    var fullname;
+    document.write("<br>");
+    
+    fullname = fname+lname;
+    document.write(fullname);
+    document.write("<br>");
+
+
+     var string1 = "chennai";
+     var n1 = 2385 ;
+    document.write(string1);
+    document.write(2385);
+
+
+// filters
+    const persons = [
+  { name: 'John', age: 30 },
+  { name: 'Alice', age: 25 },
+  { name: 'Bob', age: 35 },
+];
+//  const persons = [
+
+// { name: 'naveen', age:22},
+// { job : 'software', }
+
+//  ];
+//  const olderThan22 = persons.filter((person) => person.job > software);
+//  console.log(olderThan22);
+
+const olderThan30 = persons.filter((person) => person.age > 30);
+
+console.log(olderThan30);
+
+// variables
+// var
+function example() {
+  if (true) {
+    var x = 10;
+  }
+  console.log(22);
+}
+example();
+console.log(2); 
+
+
+
+
+
+
+
+// vowels
+
+function countVowels(inputString) {
+
+    var lowercaseString = inputString.toLowerCase();
+
+    
+    var vowels = ['a', 'e', 'i', 'o', 'u'];
+
+    var strings = ['capitanamerica','jacksparrow','johnwick'];
+
+    var vowelCount = 0;
+
+  
+    for (var i = 0; i < lowercaseString.length; i++) {
+        
+        if (vowels.includes(lowercaseString[i])) {
+            vowelCount++;
+        }
+    }
+
+    
+    return vowelCount;
+}
+
+
+
+
+
+var myString = "capitanamerica,sychology,psycho";
+var numberOfVowels = countVowels(myString);
+
+console.log("Original String: " + myString);
+console.log("Number of Vowels: " + numberOfVowels);
+
+
+
+
+
+
+// returnfunctions
+function string(ok){
+    let output='';
+    for(let i=ok.length-1;i<=ok.length && i>=0;i--){
+        output=output.concat(ok[i]);
+    }
+    return output
+}
+
+let ok="naveen is a gangstar mostly cloundy in chennai because storm is coming  to this city red alert chennai is the second largest city";
+console.log(string(ok))
+
+
+
+
+
+
+
+
+// captilizefunctions
+
+function capitalizeSentence(sentence) {
+    return sentence.replace(/\s\w/g, function (match) {
+        console.log(match)
+        return match.toUpperCase();
+    });
+}
+
+
+var originalSentence = "naveen naidu,naidu  gangstar mostly cloundy in chennai because storm is coming  to this city red alert chennai is the second largest city ";
+var result = capitalizeSentence(originalSentence);
+console.log(result);
+
+
+
+
+
+
+
+//  removeDuplicatesfunctions
+
+function removeDuplicates(inputString) {
+    var result = "";
+    var charSet = new Set();
+
+    for (var i = 0; i <inputString.length; i++) {
+        var currentChar = inputString[i];
+
+        
+        if (!charSet.has(currentChar)) {
+            result += currentChar;
+            charSet.add(currentChar);
+        }
+    }
+
+    return result;
+}
+
+var stringWithDuplicates = "prografeiojferufervrjgierhfemckngdwefjeqofeinkferfjefeflkwevfherfef;efveerherbvjrbvrgfefojeopdwg9390143897fjiejferhufrfroutrerjforiftrgtirjiiiiiijiiiijijijjijimming";
+var result = removeDuplicates(stringWithDuplicates);
+console.log(result);
+
+
+
+
+// countwords
+
+function countWords(paragraph) {
+    
+    var words = paragraph.split(/\s+/);
+    
+    
+    return words.length;
+}
+
+// Example usage:
+var paragraph = "This is a sample paragraph with several words his is a sample paragraph with several words.mostlymostly his is a sample paragraph with sever.";
+var wordCount = countWords(paragraph);
+console.log("Number of words in the paragraph: his is a sample paragraph with several words.mostlymostly his is a sample paragraph with sever", wordCount);
+
+
+
+// function trimword(inputstr){
+//     return inputstr.trim();
+// }
+
+// let str = "idont know why are you asking me";
+// console.log(trimword(str));
+
+
+
+
+// trim method
+let input = "my name is naveen naidu"
+
+function test(input){
+
+ let secondtest = input.split(' ').reverse().join(' ')
+
+ return secondtest
+}
+
+console.log(test(input))
+
+
+
+
+function countLines(text) {
+    // Split the text into an array of lines using the newline character
+    const linesArray = text.split('\n');
+
+    // Remove empty lines (if any) to get an accurate count
+    const nonEmptyLines = linesArray.filter(line => line.trim() !== '');
+
+    // Return the number of non-empty lines
+    return nonEmptyLines.length;
+}
+
+// Example usage:
+const text = "This is line 1.\nThis is line 2.\nThis is line 3.";
+
+const lineCount = countLines(text);
+console.log(`The text has ${lineCount} lines.`);
+
+
+
+
+function titleCase(sentence) {
+    
+    var words = sentence.split(' ');
+
+    
+    var titleCaseWords = words.map(function(word) {
+        return word.charAt(0).toUpperCase() + word.slice(1);
+    });
+
+
+    var titleCaseSentence = titleCaseWords.join(' ');
+
+    return titleCaseSentence;
+}
+
+// Example 
+var inputSentence = "this is a sample sentenceis is a sample paragraph with several words his is a sample paragraph with several words.most";
+var outputSentence = titleCase(inputSentence);
+console.log(outputSentence);
+
+
+// filterevennumbers
+function filterEvenNumbers(arr) {
+    // Use the filter method to create a new array with only odd numbers
+    var oddNumbers = arr.filter(function(number) {
+        return number % 2 !== 0;
+    });
+
+    return oddNumbers;
+}
+
+// Example usage:
+var numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11,12,13,14,15,16,17,18,19,20,22,,33,44,56];
+var filteredArray = filterEvenNumbers(numbersArray);
+console.log(filteredArray);
+
+
+
+
+
+function flattenArray(arr) {
+    let flattened = [];
+
+    function flatten(innerArr) {
+        for (let i = 0; i < innerArr.length; i++) {
+            if (Array.isArray(innerArr[i])) {
+                flatten(innerArr[i]);
+            } else {
+                flattened.push(innerArr[i]);
+            }
+        }
+    }
+
+    flatten(arr);
+    return flattened;
+}
+
+// Example usage:
+const nestedArray = [1, [2, [3, 4], 5], 6,3,2,21,177,6,443,677];
+const flattenedArray = flattenArray(nestedArray);
+console.log(flattenedArray); 
+
+
+
+
+
+
+        </script>
+
+        <input type="button is-black" value="click me" onclick="naveen()"/>
+    </body>
+</html>
