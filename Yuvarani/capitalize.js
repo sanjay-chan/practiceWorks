@@ -1,27 +1,3 @@
-let str = "good morning have a nice day";
-
-
-function add(x,y){
-    return x+y;
-}
-
-function add_values(z){
-    let a = 10;
-    let b= 11;
-    return z(a,b);
-}
-
-let g = add_values(add);
-
-let k = add_values((x,y)=>{
-    return x+y;
-})
-
-
-
-
-
-
 function capital_letter(str) 
 {
     
