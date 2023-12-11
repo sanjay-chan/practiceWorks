@@ -46,6 +46,6 @@ let num = "car,van,bus,auto";
 let vehicles = num.split(",");
 console.log(vehicles);
 
-
-
-
+// trim
+let mask = "      im in chennaicental       "
+console.log(mask.trim());
