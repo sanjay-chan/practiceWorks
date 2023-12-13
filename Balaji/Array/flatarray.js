@@ -6,5 +6,4 @@ function marge(inputdata){
 let inputarr = [1,[2,3,[4,6]],7];
 console.log(marge(inputarr)); 
 
-
-
+/* */

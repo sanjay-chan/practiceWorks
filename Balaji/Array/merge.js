@@ -1,5 +1,5 @@
 function meragearr(inputdata1 , inputarr2){
-    let result = inputarr1.concat(inputarr2);
+    let result = inputdata1.concat(inputarr2);
     return result;
 }
 
