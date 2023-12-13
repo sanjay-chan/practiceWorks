@@ -15,11 +15,11 @@ let input = "miketyson";
 console.log(input[8]);
 
 // concatination
-let method1 = "naveennaidu";
+let method1 = "naveennaidu7676";
 let method2 = "saradarpaparayudu is friends";
-let result = method1.concat(", ", method2);
+let pratice = method1.concat(", ", method2);
 
-console.log(result);
+console.log("result == ",pratice);
 
 // substring
 let text = "vvuiervruovvrvrv,  nvnereuererenre";
@@ -39,7 +39,7 @@ console.log(nun.substring(0,5));
 // replacemethod
 let not = "Hello, miketyson";
 let newNot = not.replace("hello", "mickeljackson");
-console.log(newNot);
+console.log(newNot)
 
 //    splitmethod
 let num = "car,van,bus,auto";
@@ -49,3 +49,11 @@ console.log(vehicles);
 // trim
 let mask = "      im in chennaicental       "
 console.log(mask.trim());
+
+
+
+
+
+
+
+
