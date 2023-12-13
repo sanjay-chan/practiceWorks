@@ -6,8 +6,8 @@ function shuffleArray(array) {
         // Generate random number between 0 is included and  1 is not included
         let j = Math.floor(Math.random() * (i + 1));
                    
-        let temp = array[i];
-        array[i] = array[j];
+        let temp = array[i];//5
+        array[i] = array[j]; //5= j
         array[j] = temp;
     }
        
