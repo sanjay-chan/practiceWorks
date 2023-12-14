@@ -8,6 +8,7 @@ for (var number of arr) {
 
 average = sum / arr.length;
 
+
 console.log("The average of given numbers is",average);
 
 
