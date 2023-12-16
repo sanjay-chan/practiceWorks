@@ -1,14 +1,11 @@
-function PowerOfTwo(number) {
-    
-    if (number ** 2) {
-            return false;
-        }
-    else{
-        return true;
-       }
+
+  function  isPowerTwo(n){
+    let i = 1;
+    while (i < n){
+        i *= 2; // i=i*2
     }
+    return i == n;
+}
 
-
-
-const number = 5;
-console.log(isPrime(number));
+let n=8;
+console.log(isPowerTwo(n));
