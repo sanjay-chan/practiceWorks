@@ -4,5 +4,11 @@ function calculateBMI(weigth, height){
 };
 
 let kg = 54;
-let feet = 1.57
+let feet = 1.57;
 console.log(calculateBMI(kg,feet));
+
+/*
+
+bmi = weight/ heigth**2;
+
+*/

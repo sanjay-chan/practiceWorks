@@ -4,3 +4,5 @@ function concatenateStrings(...input) {
 
 let result = concatenateStrings("Hello", ", ", "World", "!");
 console.log(result);
+
+//

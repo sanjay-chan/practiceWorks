@@ -1,14 +1,8 @@
-function fact(n) {
-  let result = 1;
-  for (let i = 1; i <= n; i++) {
-    result *= i;
+function factorial(n) {
+  if (n == 1) {
+    return 1;
   }
-  return result;
+  return n * factorial(n - 1);
 }
 
-let data = fact(5);
-console.log(data);
-
-//eg result = result * i
-//
-
+console.log(factorial(5));
