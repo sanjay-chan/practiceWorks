@@ -21,6 +21,7 @@ function arr1(numbers){
 }
 
 function arr2(){
+    
    return numbers.filter(arr1)
 }
 
