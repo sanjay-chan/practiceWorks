@@ -22,22 +22,10 @@ console.log(  );
 
 
 
-function sumArray(numbers) {
-    // Use the reduce method to sum up all the numbers in the array
-    const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue,99);
-    return sum;
-  }
-  
-  // Example usage:
-  const numbersArray = [1, 2, 3, 4, 5];
-  const any = sumArray(numbersArray);
-  
-  console.log(any); 
-  
 
 
 
-}
+
 
 
 
