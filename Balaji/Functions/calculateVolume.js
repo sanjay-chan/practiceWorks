@@ -1,8 +1,2 @@
-function calculateVolume(length, width, height){
-    return length * width * height;
-};
-
-let l = 30;
-let w = 30;
-let h = 10;
-console.log(calculateVolume(l,w,h));
+let volume = (l,b,h)=>{return l*b*h}
+console.log(volume(7,8,9));
