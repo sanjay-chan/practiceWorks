@@ -1,0 +1,146 @@
+
+img {
+   position: relative;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+    position: relative;
+   }
+
+  nav {
+    background-color:#cbebeb;
+    color:blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:40px;
+    width: 90%;
+    height: 50px;
+    font-weight: bold;
+    margin-top: 2%;
+    margin-left: 5%;
+    
+}
+
+  body{
+    background-color: rgb(236, 246, 248);
+    position: relative;
+    
+  }
+
+  nav .btn{
+    float: right;
+    color: blue;
+    font-size:20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 2%;
+    padding:10px;
+    
+  }
+  
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+.card{
+  height: 400px;
+  margin:50px;
+  box-shadow:2px 5px 10px black;
+  border-radius: 10px;
+  width:25%;
+ 
+}
+.intro{
+  height: 60px;
+  padding:6px;
+  box-sizing: border-box;
+  background:#cbebeb;
+  color:blue;
+  bottom:20px;
+ 
+}
+h1{
+  margin:10px;
+  font-size: 25px;
+  text-align: center;
+  font-style: italic;
+ 
+}
+
+p{
+  font-size: 20px;
+  font-style: normal;
+  margin:40px;
+  color: rgb(8, 25, 209);
+}
+
+.row{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap:50px 30px;
+}
+
+.row .left{
+  overflow:hidden;
+  margin-left:40px;
+}
+.row .left img{
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+}
+
+h2{
+  color:blue;
+  font-size:30px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p1{
+  color:rgb(102, 102, 185);
+  font-size: 20px;
+  margin-right:25%;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 34px;
+  
+}
+
+.column{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap:50px 30px;
+}
+
+.column .ani{
+  overflow:hidden;
+  margin-left:40px;
+}
+.column .ani img{
+  width: 80%;
+  height:100%;
+  object-fit: cover;
+  padding:30px;
+}
+
+h3{
+  color:rgb(88, 21, 114);
+  font-size:25px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left:10% ;
+  padding:40px;
+}
+
+ol{
+  color:rgb(102, 102, 185);
+  font-size: 20px;
+  margin-left:20%;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 44px;
+
+}
+
