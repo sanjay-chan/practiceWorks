@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.bg-container{
+    background-color:#e6f6ff;
+    padding:5px;
+    
+}
+
+.paradise-top-section{
+    background-color:white;
+    height:80px;
+    background-size:cover;
+    padding:10px;
+    margin:50px;
+}
+.paradise-logo{
+    height:50px;
+    width:50px;
+    text-align:start;
+    
+}
+.main-heading{
+    color:#4d0039;
+    font-weight:bold;
+    text-align:start;
+}
+
+
+.login-in{
+    color:white;
+    background-color:#4d0039;
+    height:45px;
+    width:70px;
+    margin-inline-start:630px;
+}
+
+.main-image{
+    background-image:url("https://thebooksparadise.com/lady-3.28f16437bbadc739.png");
+    height:100vh;
+    background-size:cover;
+    padding:10px;
+    margin:50px;
+}
+.second-image{
+    background-color:white;
+    border-radius:1px;
+    margin:50px;
+}
+.block-images{
+    margin:15px;
+    border-radius:10px;
+    border-style:solid;
+    border-width:3px;
+    border-color:#e5eaf4;
+    
+
+}
+.image-a{
+    height:65vh;
+    background-size:cover;
+
+}
+.heading-a{
+    color:brown;
+    text-align:center;
+    padding:3px;
+}
+.paragraph-a{
+    color:black;
+    padding:7px;
+    margin:3px;
+}
+.image-b{
+    height:65vh;
+    background-size:cover;
+}
+.heading-b{
+    color:brown;
+    text-align:center;
+    padding:3px;
+
+}
+.paragraph-b{
+    color:black;
+    padding:7px;
+    margin:3px;
+}
+.image-c{
+    height:62vh;
+    background-size:cover;
+}
+.heading-c{
+    color:brown;
+    text-align:center;
+    padding:3px;
+}
+.paragraph-c{
+    color:black;
+    padding:7px;
+    margin:3px;
+    
+}
+
+.third-image{
+    margin:50px;
+    
+    
+}
+
+.third-heading{
+    color:#4d0039;;
+    font-weight:bold;
+    margin-inline-end:80px;
+    margin-block-start:-20px; 
+}
+.third-paragraph{
+    color:black;
+    margin:30px;
+
+}
+.unordered-value-list{
+    list-style-type:circle;
+
+}
+.third-image1{
+    height:110vh;
+    background-size:cover;
+    width:520px;
+}
+
+.fourth-image{
+    margin:50px;
+
+    
+
+}
+.fourth-heading{
+    color:#4d0039;
+    font-weight:bold;
+    margin-block-start:-20px;
+    margin-inline-start:40px;
+    font-family:roboto;
+}    
+ .fourth-heading1{
+    color:#4d0039;
+    font-weight:bold;
+    margin-inline-start:140px;
+    font-weight:200px;
+    font-family:roboto; 
+}
+.fourth-paragraph{
+    color:black;
+    margin-inline-start:40px;
+    margin-block-start:20px;
+
+}
+.fourth-image1{
+    height:80vh;
+    background-size:cover;
+    width:550px;
+
+}
+
+.pur-heading{
+    margin-block-start:-20px;
+}
+
+.purpose-heading{
+    text-align:center;
+    color:#4d0039;
+    padding:10px;
+
+    
+}
+.purpose-heading1{
+    text-align:center;
+    color:black;
+    font-weight:bold;
+    padding:10px;
+    font-size:40px; 
+       
+}
+
+
+.fifth-image{
+    margin:60px;
+
+}
+.fifth-heading{
+    color:#4d0039;
+    text-align:center;
+    padding:20px;
+    font-weight:bold;
+    margin-block-start:-40px;
+    margin-inline-end:70px;
+
+}
+.fifth-paragraph{
+    color:black;
+    font-size:20px;
+    margin:20px;
+    margin-inline-end:30px;
+
+}
+.fifth-image1{
+    height:100vh;
+    background-size:cover;
+    width:550px;
+}
+
+.sixth-image{
+    margin:60px;
+
+}
+.sixth-heading{
+    color:#4d0039;
+    text-align:center;
+    padding:20px;
+    font-weight:bold;
+    margin-block-start:-20px;
+
+}
+.sixth-paragraph{
+    color:black;
+    font-size:20px;
+    margin:10px;
+
+}
+.sixth-image1{
+    height:100vh;
+    background-size:cover;
+    width:550px;
+    margin-inline-end:80px;
+}
+
+.seventh-image{
+    margin:60px;
+    
+
+}
+.seventh-heading{
+    color:#4d0039;
+    text-align:center;
+    padding:20px;
+    font-weight:bold;
+    margin-block-start:-30px;
+    margin-inline-end:50px;
+
+}
+.seventh-paragraph{
+    color:black;
+    font-size:20px;
+    margin:20px;
+    font-family:fairplaydisplay;
+    margin-inline-end:80px;
+
+}
+.seventh-image1{
+    height:100vh;
+    background-size:cover;
+    width:550px;
+    
+}
+
+.eighth-image{
+    margin:60px;
+    
+
+}
+.eighth-heading{
+    color:#4d0039;
+    text-align:center;
+    margin-inline-start:-280px;
+    font-size:27px;
+    
+}
+.eighth-heading1{
+    color:black;
+    text-align:center;
+    font-weight:bold;
+    margin-inline-start:-30px;
+    padding:20px;
+
+}
+.eighth-heading2{
+    color:black;
+    text-align:center;
+    font-weight:bold;
+    margin-inline-start:-350px;
+    font-size:30px;
+    margin-block-start:-18px;
+}
+.eighth-paragraph{
+    color:black;
+    
+
+     
+
+
+}
+.eighth-image1{
+    height:65vh;
+    background-size:cover;
+    width:400px;
+    margin-inline-end:180px;
+    
+}
+.ninth-image{
+    margin:60px;
+    
+
+}
+.ninth-heading{
+     color:#4d0039;
+    text-align:center;
+    margin-inline-start:-770px;
+    font-size:25px;
+    
+}
+.ninth-heading1{
+    color:black;
+    text-align:center;
+    font-weight:bold;
+    margin-inline-start:-500px; 
+    padding:10px;
+}
+.ninth-heading2{
+    color:black;
+    text-align:center;
+    font-weight:bold;
+    margin-inline-start:-700px; 
+    font-size:30px;
+    margin-block-start:-5px;
+}
+
+
+.ninth-paragraph{
+    color:black;
+     margin-inline-start:-480px;    
+}
+.ninth-paragraph1{
+    color:black;
+    margin-inline-start:-480px;    
+}
+.ninth-image1{
+    height:65vh;
+    background-size:cover;
+    width:400px;
+    margin-inline-end:700px; 
+}
+
+.logo1{
+    height:50px;
+    width:50px;
+    margin:20px;
+    margin-inline-start:-500px;
+}
+.ninth-para1{
+    color:blue;
+    margin-inline-start:-20px;
+}
+.logo2{
+    height:50px;
+    width:50px;
+    margin-inline-start:40px;
+}
+.ninth-para2{
+    color:blue;
+    
+}
+.logo3{
+    height:50px;
+    width:50px;
+    margin-inline-start:-500px;
+}
+.ninth-para3{
+    color:blue;
+}
+.logo4{
+    height:50px;
+    width:50px;
+    margin-inline-start:10px;
+}
+.ninth-para4{
+    color:blue;
+}    
+    
+.last-container{
+    height:40vh;
+    background-size:cover;
+   background-color:black;
+   margin:50px;
+   margin-block-start:150px;
+}
+.paradise-logo1{
+    height:35px;
+    width:40px;
+    text-align:start;
+    margin-inline-start:50px;
+    margin-block-start:20px;
+}
+.last-heading{
+    color:white;
+}
+.last-paragraph{
+    color:white;
+    margin-inline-start:60px;
+    margin-block-start:3px;
+    font-size:15px;
+}
+.last-heading{
+    color:white;
+    text-align:start;
+    margin-inline-start:100px;
+    margin-block-start:-30px;
+    font-family:roboto;
+    font-size:22px;
+}
+.last-heading1{
+    color:white;
+    font-family:roboto;
+    font-size:22px;
+    text-align:end;
+    margin-block-start:-160px;
+    margin-inline-end:200px;
+}
+.unordered-value-list1{
+    color:white;
+    text-align:start;
+    list-style-type:square;
+    margin-inline-start:750px;
+
+}    
+
+    
+
