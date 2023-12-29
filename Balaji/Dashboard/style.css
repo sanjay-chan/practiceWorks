@@ -15,3 +15,32 @@
     height: 70px;
     font-family: 'Times New Roman', Times, serif;
 }
+
+.icon1{
+    position: relative;
+    bottom: 17px;
+}
+
+.icon2{
+    position: relative;
+    bottom: 33px;
+}
+
+.text1{
+    font-size: 11px;
+}
+
+.value1{
+    position: relative;
+    bottom: 45px;
+}
+
+.value2{
+    position: relative;
+    bottom: 50px;
+}
+
+.number{
+    position: relative;
+    bottom: 25px;
+}

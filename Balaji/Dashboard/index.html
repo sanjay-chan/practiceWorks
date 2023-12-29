@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <title>Design</title>
 </head>
@@ -14,7 +18,7 @@
 
 <body class="bg-gray-300 relative">
     <header class="bg-gradient-to-r from-cyan-400 to-green-400 w-full header"></header>
-    <div class="relative bottom-14 mx-6 rounded shadow-lg bg-white block1">
+    <div class="relative bottom-10 mx-6 rounded shadow-lg bg-white block1">
         <p class="text-2xl p-4 ml-4 text1">Muhammad Abeer Abid</p>
         <img src="/icon.jpg" class="absolute rounded-full top-0 right-0 h-12 mr-2 mt-2">
         <div class="flex">
@@ -59,11 +63,162 @@
     </div>
 
     <!--Transaction Card-->
-    <!-- <div class="flex mr-8">
-        <div class="bg-white">hello</div>
-    </div> -->
+    <div class="relative flex mr-8">
+        <div class="bg-white rounded ml-8 my-5 w-1/2 font-bold p-5 text-sm">
+            TRANSACTIONS
+            <p class="grid justify-items-end pr-5 icon1"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                    viewBox="0 0 512 512">
+                    <path
+                        d="M463.5 224H472c13.3 0 24-10.7 24-24V72c0-9.7-5.8-18.5-14.8-22.2s-19.3-1.7-26.2 5.2L413.4 96.6c-87.6-86.5-228.7-86.2-315.8 1c-87.5 87.5-87.5 229.3 0 316.8s229.3 87.5 316.8 0c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0c-62.5 62.5-163.8 62.5-226.3 0s-62.5-163.8 0-226.3c62.2-62.2 162.7-62.5 225.3-1L327 183c-6.9 6.9-8.9 17.2-5.2 26.2s12.5 14.8 22.2 14.8H463.5z" />
+                </svg></p>
+            <p class="grid justify-items-end icon2"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="4"
+                    viewBox="0 0 128 512">
+                    <path
+                        d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" />
+                </svg></p>
+            <hr>
 
+            <!--Content of the card-->
+            <div>
+                <p class="pt-4 ml-8 text-md font-bold">OUTLET 1</p>
+                <p class="text-xs text-slate-400 ml-8 text1">1st March, 2018. 11:30AM</p>
+                <p class="grid justify-items-end text-xs text-slate-400 pr-5 value1">AED</p>
+                <p class="grid justify-items-end text-2xl pr-5 value2">70</p>
+            </div>
+            <hr>
+            <div>
+                <p class="pt-4 ml-8 text-md font-bold">OUTLET 2</p>
+                <p class="text-xs text-slate-400 ml-8 text1">1st March, 2018. 08:30PM</p>
+                <p class="grid justify-items-end text-xs text-slate-400 pr-5 value1">AED</p>
+                <p class="grid justify-items-end text-2xl pr-5 value2">100</p>
+            </div>
+            <hr>
+            <div>
+                <p class="pt-4 ml-8 text-md font-bold">OUTLET 3</p>
+                <p class="text-xs text-slate-400 ml-8 text1">1st March, 2018. 09:00PM</p>
+                <p class="grid justify-items-end text-xs text-slate-400 pr-5 value1">AED</p>
+                <p class="grid justify-items-end text-2xl pr-5 value2">90</p>
+            </div>
+        </div>
+        <div class="bg-white rounded ml-8 my-5 w-1/2 font-bold p-5 text-sm">
+            TOP ITEM
+            <p class="grid justify-items-end pr-5 icon1"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                    viewBox="0 0 512 512">
+                    <path
+                        d="M463.5 224H472c13.3 0 24-10.7 24-24V72c0-9.7-5.8-18.5-14.8-22.2s-19.3-1.7-26.2 5.2L413.4 96.6c-87.6-86.5-228.7-86.2-315.8 1c-87.5 87.5-87.5 229.3 0 316.8s229.3 87.5 316.8 0c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0c-62.5 62.5-163.8 62.5-226.3 0s-62.5-163.8 0-226.3c62.2-62.2 162.7-62.5 225.3-1L327 183c-6.9 6.9-8.9 17.2-5.2 26.2s12.5 14.8 22.2 14.8H463.5z" />
+                </svg></p>
+            <p class="grid justify-items-end icon2"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="4"
+                    viewBox="0 0 128 512">
+                    <path
+                        d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" />
+                </svg></p>
+            <hr>
+            <!--Content of the card-->
+            <div>
+                <p class="pt-3 ml-8 text-md font-bold">ITEM 1</p>
+                <p class="grid justify-items-end text-2xl pr-5 number">5</p>
+            </div>
+            <hr>
+            <div>
+                <p class="pt-3 ml-8 text-md font-bold">ITEM 2</p>
+                <p class="grid justify-items-end text-2xl pr-5 number">2</p>
+            </div>
+            <hr>
+            <div>
+                <p class="pt-3 ml-8 text-md font-bold">ITEM 3</p>
+                <p class="grid justify-items-end text-2xl pr-5 number">4</p>
+            </div>
+            <hr>
+            <div>
+                <p class="pt-3 ml-8 text-md font-bold">ITEM 4</p>
+                <p class="grid justify-items-end text-2xl pr-5 number">8</p>
+            </div>
+        </div>
+    </div>
 
+    <!--Bottom Card-->
+    <div class="relative flex mr-8">
+        <div class="bg-white rounded ml-8 my-5 w-1/2 font-bold p-5 text-sm">
+            SPEND VS TOP UP
+            <p class="grid justify-items-end pr-5 icon1"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                    viewBox="0 0 512 512">
+                    <path
+                        d="M463.5 224H472c13.3 0 24-10.7 24-24V72c0-9.7-5.8-18.5-14.8-22.2s-19.3-1.7-26.2 5.2L413.4 96.6c-87.6-86.5-228.7-86.2-315.8 1c-87.5 87.5-87.5 229.3 0 316.8s229.3 87.5 316.8 0c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0c-62.5 62.5-163.8 62.5-226.3 0s-62.5-163.8 0-226.3c62.2-62.2 162.7-62.5 225.3-1L327 183c-6.9 6.9-8.9 17.2-5.2 26.2s12.5 14.8 22.2 14.8H463.5z" />
+                </svg></p>
+            <p class="grid justify-items-end icon2"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="4"
+                    viewBox="0 0 128 512">
+                    <path
+                        d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" />
+                </svg></p>
+            <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+
+        </div>
+        <div class="bg-white rounded ml-8 my-5 w-1/2 font-bold p-5 text-sm">
+            ITEM GATEGORIES
+            <p class="grid justify-items-end pr-5 icon1"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                    viewBox="0 0 512 512">
+                    <path
+                        d="M463.5 224H472c13.3 0 24-10.7 24-24V72c0-9.7-5.8-18.5-14.8-22.2s-19.3-1.7-26.2 5.2L413.4 96.6c-87.6-86.5-228.7-86.2-315.8 1c-87.5 87.5-87.5 229.3 0 316.8s229.3 87.5 316.8 0c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0c-62.5 62.5-163.8 62.5-226.3 0s-62.5-163.8 0-226.3c62.2-62.2 162.7-62.5 225.3-1L327 183c-6.9 6.9-8.9 17.2-5.2 26.2s12.5 14.8 22.2 14.8H463.5z" />
+                </svg></p>
+            <p class="grid justify-items-end icon2"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="4"
+                    viewBox="0 0 128 512">
+                    <path
+                        d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" />
+                </svg></p>
+            <canvas id="myChart2" style="width:100%;max-width:700px"></canvas>
+        </div>
+    </div>
 </body>
+
+<script>
+    const xValues = ["Jan", "Feb", "Mar", "Apr", "May", "jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    new Chart("myChart", {
+        type: "line",
+        data: {
+            labels: xValues,
+            datasets: [{
+                data: [40, 45, 40, 80, 41, 80, 38, 120],
+                borderColor: "lightblue",
+                fill: false
+            }, {
+                data: [230, 120, 470, 250, 480, 120, 1920],
+                borderColor: "green",
+                fill: false
+            },
+            ]
+        },
+        options: {
+            legend: { display: false }
+        }
+    });
+
+    const xValues1 = ["Italy", "France", "Spain", "USA", "Argentina"];
+    const yValues = [55, 49, 44, 24, 15];
+    const barColors = [
+        "#b91d47",
+        "#00aba9",
+        "#2b5797",
+        "#e8c3b9",
+        "#1e7145"
+    ];
+
+    new Chart("myChart2", {
+        type: "pie",
+        data: {
+            labels: xValues1,
+            datasets: [{
+                backgroundColor: barColors,
+                data: yValues
+            }]
+        },
+        options: {
+            title: {
+                display: true,
+                text: "World Wide Wine Production 2018"
+            }
+        }
+    });
+</script>
+
 
 </html>
