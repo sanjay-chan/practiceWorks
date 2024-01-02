@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    background: linear-gradient(to bottom right, #37d8f5, transparent),
+                linear-gradient(to bottom left, #cd2fec, transparent),
+                linear-gradient(to top right, #f556e8, transparent),
+                linear-gradient(to top left, #ad05f0, transparent);
+    background-size: 100% 100%; 
+    background-repeat: no-repeat; 
+  }
+
+  .container{
+    width:100%;
+    height:100%;
+  }
+
+  .column{
+    width:95%;
+    height:95%;
+    margin:30px;
+    border-radius: 20px;
+  }
+
+  .sidebar {
+    width: 40px;
+    height: 50vh;
+    background-color: #590ee4;
+    margin:10px;
+    position: relative;
+    position: relative;
+    left: -30px;
+    top: 10px;
+    border-radius: 20px;
+  }
+  .sidebar i {
+    text-decoration: none;
+    color: #bdb8b8;
+    margin: 2px;
+    text-align: center;
+    padding: 8px;
+    
+  }
+
+h2{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:20px;
+    margin-left: 20px;
+}
+
+
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    top:-110px;
+  }
+
+  .card {
+    width: 250px;
+    height: 60px;
+    background-color: #fff;
+    margin: -40px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    position: relative;
+    
+  }
+
+.card .fa-solid{
+    position: absolute;
+    left:90%;
+}
