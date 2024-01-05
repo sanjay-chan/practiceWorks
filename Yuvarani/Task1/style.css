@@ -29,7 +29,7 @@ body {
     margin:10px;
     position: relative;
     left: -30px;
-    top:-140%;
+    top:-190%;
     border-radius: 20px;
   }
   .sidebar i {
@@ -101,17 +101,14 @@ h2{
 }
 
 .icon-container .fa-message{
-  background-color: rgb(245, 231, 240);
+
   height: 25px;
   width:25px;
   border-radius: 10%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  left:10px;
+  left:20px;
 }
 
-.fa-message{
-  position: relative;
-}
+
 
 
  .card p{
@@ -217,7 +214,7 @@ font-size: 18px;
   width: 500px;
   height: 220px;
   background-color: #fff;
-  margin-left:400px;
+  margin-left:390px;
   top:-430px;
   padding: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -227,16 +224,143 @@ font-size: 18px;
   position: relative;
   
 }
-/* .card5 {
-  width: 560px;
-  height: 160px;
+.card5 {
+  width: 300px;
+  height: 210px;
   background-color: #fff;
   margin: 40px;
   padding: 10px;
+  margin-left:925px;
+  top:-700px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   border-radius: 5%;
   position: relative;
   
-} */
+}
+.footer h2{
+  margin:-9px;
+  font-size: 15px;
+}
+
+.circle,.circle:before,.circle:after,.circle b:before,.circle b:after{
+  content:""; 
+  width:100px;
+  height:100px;
+  border-radius:50%;
+}
+.circle{
+  position:relative;
+  left:80px;
+  top:-10px;
+  overflow:hidden;
+  margin:20px;
+  transform:rotate(0deg);
+  background:#f9f9f9;
+}
+.circle:before,.circle:after,.circle b:before,.circle b:after{
+  position:absolute;
+  left:0;
+  top:0;
+}
+.circle:before{
+  border-radius:50% 0 0 50%;
+  z-index:2;
+  left:-50%;
+  background:#f9f9f9;
+}
+.circle b:after {
+  background-image:linear-gradient(to right,blue 50%,transparent 50%,transparent 100%);
+  z-index:1;
+  animation:3s spin linear forwards;
+}
+.circle b:before {
+  background-image:linear-gradient(to left,blue 50%,transparent 50%,transparent 100%);
+  z-index:1;
+  animation:3s spin2 linear forwards 3s;
+  opacity:0;
+}
+
+.circle i {
+  display:block;
+  width:94px;
+  height:94px;
+  line-height:94px;
+  font-size:150%;
+  font-weight: bold;
+  text-align:center;
+  margin:3px;
+  position:relative;
+  z-index:5;
+  background:#fff;
+  border-radius:50%;
+}
+.b2 b:after{animation-name:spinb}
+.b2 b:before{display:none}
+
+.b3 b:after{animation-name:spinc}
+.b3 b:before{display:none}
+
+.b4 b:after{animation-name:spind}
+.b4 b:before{animation-name:spind2}
+
+
+@keyframes spin{from {  transform:rotate(0)}to {transform:rotate(180deg)}}
+@keyframes spin2{from { transform:rotate(0);opacity:1}to {transform:rotate(90deg);opacity:1}}
+
+@keyframes spinb{from { transform:rotate(0)}to {transform:rotate(180deg)}}
+
+@keyframes spinc{from { transform:rotate(0)}to {transform:rotate(90deg)}}
+
+@keyframes spind{from { transform:rotate(0)}to {transform:rotate(180deg)}}
+@keyframes spind2{from {  transform:rotate(0);opacity:1}to {transform:rotate(57deg);opacity:1}}
+
+.card3 h4{
+  color:grey;
+  font-size: 10px;
+  text-align: center;
+  top:150px;
+  left:50px;
+  position: absolute;
+}
+.myButton{
+  color:white;
+  background:rgb(119, 56, 236);
+  border-radius: 10%;
+  width: 100px;
+  position: absolute;
+  top:190px;
+  left:100px;
+}
+
+ img{
+  position: absolute;
+  align-items: center;
+  left:20px;
+  top:35px;
+  height:80%;
+  width:90%;
+  
+ }
+
+.image3{
+  position: absolute;
+  align-items: center;
+  left:-30px;
+  top:15px;
+  height:90%;
+  width:110%;
+}
+ .name p{
+  font-size: 13px;
+  font-weight: bold;
+  margin:30px;
+  position:absolute;
+  padding:10px;
+  top:-40px;
+  left:40px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:rgb(15, 1, 1)
+  
+ }
