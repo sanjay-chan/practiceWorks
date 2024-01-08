@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bulma</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <style>
+       .flex-container {
+        display: flex;
+        background-color: rgb(166, 238, 182);
+        margin:50px;
+      } 
+      
+      .flex-container div {
+        background-color: #3d0ab4;
+        width: 100px;
+        margin: 10px;
+        color:white;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        border-radius: 10%;
+      
+      }
+      h1{
+        font-size:40px;
+        text-align: center;
+      }
+
+      .grid-container {
+         display: grid;
+         grid-template-columns: auto auto auto auto;
+         gap: 10px;
+         background-color: #2196F3;
+         padding: 10px;
+         margin:50px;
+       }
+
+       .grid-container  div {
+          background-color: pink;
+          color:red;
+          text-align: center;
+          padding: 20px 0;
+          font-size: 30px;
+          }
+
+          
+
+      </style>
+  </head>
+  <body>
+    <!-- <div class="container">
+      <h1 class="has-background-info-dark has-text-white has-text-centered is-capitalized">
+        Hello World
+      </h1>
+      <p class="has-background-danger-dark has-text-white is-lowercase has-text-weight-bold">
+        My first website!
+      </p>
+    </div>
+
+<p class="mb-3 px-5 is-size-4 has-text-right">
+  Margin bottom
+</p>
+
+<p class="py-5 is-size-2 is-underlined has-text-weight-medium is-family-code">
+  Horizontal padding
+</p>
+
+
+<p class="ml-2 pt-10 is-size-3 is-italic is-family-monospace">
+  Both
+</p> -->
+<h1>Css flex box</h1>
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+</div>
+
+<h1>Css Grid</h1>
+<div class="grid-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>  
+  <div>7</div>
+  <div>8</div>
+</div>
+
+</body>
+</html>
