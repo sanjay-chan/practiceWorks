@@ -1,0 +1,97 @@
+body
+{
+   background-color: rgb(133, 13, 135);
+ margin: 0;
+    padding: 0;
+    
+ 
+}
+
+.header
+{
+    
+    color:black;
+    padding: 10px;
+    font-size: 4ch;
+    margin-bottom: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    backdrop-filter: blur(10px);
+    
+    
+}
+.content
+{
+    padding: 10px;
+}
+table
+{
+  width: 100%;
+   background-color:rgb(226, 221, 216);
+   border-collapse: collapse;
+   
+   position: relative;
+   backdrop-filter: blur(5px);
+    text-align:center;
+    padding: 20px;
+    overflow-y: scroll;
+    
+}
+.table
+{
+    margin: 10px;
+   
+}
+td{
+    text-align:center;
+    padding: 20px;
+}
+th{
+    padding: 20px;
+    font-size: larger;
+    text-align:center;
+    
+  
+}
+img
+{
+    border-radius: 50%;
+   position: absolute;
+   margin-left: -40px;
+   margin-top: -10px;
+  justify-content: flex-start;
+    
+}
+.textcolor-one
+{
+    background-color: rgb(144, 76, 207);
+    padding: 10px;
+    border-radius: 20px;
+}
+.textcolor-two
+{
+    background-color: rgb(51, 220, 17);
+    padding: 10px;
+    border-radius: 20px;
+}
+.textcolor-three
+{
+    background-color: rgb(255, 247, 0);
+    padding: 10px;
+    border-radius: 20px;
+}
+.textcolor-four
+{
+    background-color: rgb(238, 12, 159);
+    padding: 10px;
+    border-radius: 20px;
+}
+.textcolor-five
+{
+    background-color: rgb(65, 238, 12);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+tr:nth-child(even){
+    background-color: antiquewhite;
+}

@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    background-color: aquamarine;
+    margin: 0;
+    padding: 10px;
+}
+h4{
+    margin: 20px;
+    font-size: larger;
+}
+.content
+{
+    color: red;
+    margin: 5px;
+    padding: 10px;
+}
+.content2
+{
+   
+    margin: 10px;
+    padding: 10px;
+}
+.color
+{
+    background-color: red;
+}
+
+p.dotted {border-style: dotted;
+    margin: 5px;
+}
+p.dashed {border-style: dashed;margin: 5px;}
+p.solid {border-style: solid;margin: 5px;}
+p.double {border-style: double;margin: 5px;}
+p.groove {border-style: groove;margin: 5px;}
+p.ridge {border-style: ridge;margin: 5px;}
+p.inset {border-style: inset;margin: 5px;}
+p.outset {border-style: outset;margin: 5px;}
+p.none {border-style: none;margin: 5px;}
+p.hidden {border-style: hidden;margin: 5px;}
+p.mix {border-style: dotted dashed solid double;margin: 10px;}
