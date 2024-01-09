@@ -1,0 +1,108 @@
+body {
+  background-color: #cf63f0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  background-color: #d68cec;
+  height: 60px;
+}
+
+.container {
+  background-color: white;
+  height: 500px;
+  border-radius: 10px;
+  display: block;
+  overflow-y: scroll;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr:nth-child(odd) {
+  background-color: lightgrey;
+}
+
+th,
+td {
+  text-align: justify;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+th:first-child {
+  border-top-left-radius: 10px;
+}
+
+th:last-child {
+  border-top-right-radius: 10px;
+}
+
+.status-shipped {
+  position: relative;
+  background-color: skyblue;
+  border-radius: 20px;
+  height: 25px;
+  padding: 10px;
+  right: 50px;
+}
+
+.status-shipped p {
+  display: block;
+  position: absolute;
+  left: 55px;
+  top: -5px;
+}
+
+.status-delivered {
+  position: relative;
+  background-color: rgb(26, 206, 26);
+  border-radius: 20px;
+  height: 25px;
+  padding: 10px;
+  right: 50px;
+}
+
+.status-delivered p {
+  display: block;
+  position: absolute;
+  left: 55px;
+  top: -5px;
+}
+
+.status-pending {
+  position: relative;
+  background-color: rgb(255, 175, 70);
+  border-radius: 20px;
+  height: 25px;
+  padding: 10px;
+  right: 50px;
+}
+
+.status-pending p {
+  display: block;
+  position: absolute;
+  left: 55px;
+  top: -5px;
+}
+
+.status-cancelled {
+  position: relative;
+  background-color: rgb(255, 0, 0);
+  border-radius: 20px;
+  height: 25px;
+  padding: 10px;
+  right: 50px;
+}
+
+.status-cancelled p{
+    display: block;
+    position: relative;
+    left: 40px;
+    bottom: 14px;
+}
+
