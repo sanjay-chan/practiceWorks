@@ -1,0 +1,73 @@
+ body{
+ background-color: rgb(183, 221, 151);
+ margin:0px;
+ padding:0px;
+ }
+ .container{
+    margin-top: 20px;
+    
+ }
+ 
+ .button {
+    display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  }
+
+  .button-two {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #04AA6D;
+  }
+  
+  .button-two:hover {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .button-three {
+    background-color: black;
+  }
+  
+  .button-three:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+  }
+
+  .button-four {
+    cursor: not-allowed;
+  }
+
+  .button-five span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button-five span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.5s;
+  }
+  
+  .button-five span {
+    padding-right: 25px;
+  }
+  
+  .button-five:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
