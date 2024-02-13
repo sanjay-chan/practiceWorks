@@ -3,7 +3,6 @@
 require_once "dbconnection.php";
 require_once "post.php";
 
-
 // Database connection details
 $servername = "localhost";
 $username = "root";
@@ -13,21 +12,36 @@ $database = "post";
 // Create an object of CRUDOperations
 $crudObject = new CRUDOperations($servername, $username, $password, $database);
 
+// Use correct string keys to access values from $_POST
 
-$Name = "yuva";
-$Age = 22;
-$Fathersname="dass";
-$Mobileno=1234567890;
+$Name = isset($_POST["Name"]) ? $_POST["Name"] : "";
+$Age = isset($_POST["Age"]) ? $_POST["Age"] : "";
+$Father_name = isset($_POST["Father_name"]) ? $_POST["Father_name"] : "";
+$Mobile_no = isset($_POST["Mobile_no"]) ? $_POST["Mobile_no"] : "";
+$record_id = isset($_POST["record_id"]) ? $_POST["record_id"] : "";
+
+
 
 // Example usage
-$crudObject->create($Name,$Age,$Fathersname,$Mobileno);
-//  $crudObject->read();
-//$crudObject->update(18,"Jane Doe",55 );
-//$crudObject->read();
-//$crudObject->delete(19);
-//$crudObject->read();
+if (!empty($Name) && !empty($Age) && !empty($Father_name) && !empty($Mobile_no)&& !empty($record_id)) {
+
+    ////$crudObject->create($Name, $Age, $Father_name, $Mobile_no);
+    // $crudObject->read();
+    //$crudObject->update($id,$Name,$Age, $Father_name, $Mobile_no);
+    //  $crudObject->read();
+     $crudObject->delete(73);
+    // $crudObject->read();
+} else {
+
+    echo "Please fill in all the required fields.";
+}
 
 
-
-
+/*if (!empty($record_id) &&!empty($Name) && !empty($Age) && !empty($Father_name) && !empty($Mobile_no)) {
+    $crudObject->delete($record_id, $Name,$Age , $Father_name,$Mobile_no);
+    echo "Record updated successfully.";
+    //$crudObject->read(); // Display the updated records
+} else {
+    echo "Please fill in all the required fields.";
+}*/
 ?>
