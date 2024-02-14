@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   <div id="my-element" style="background-color: red; ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, fuga in molestiae debitis, odit molestias vero eum reprehenderit facere doloribus nemo dolorum voluptatibus fugiat rem libero, quasi cum nulla! Quae quas, cupiditate delectus nobis corrupti voluptatibus ea modi, provident consectetur ipsum a accusantium sunt temporibus eum voluptatum magni voluptatem rerum dolorum cum dolores cumque ducimus magnam quod quam? Assumenda quam illum distinctio voluptate voluptates. Provident ea distinctio, atque omnis error ducimus fugiat repellendus dicta, eligendi veniam ab maxime, nisi eius harum repudiandae mollitia possimus nesciunt numquam adipisci. Saepe magni numquam, in dolorum explicabo reprehenderit eligendi voluptatum quasi aliquid consectetur, autem deserunt pariatur. Modi iure deserunt perferendis architecto. Ex facere dignissimos corrupti officiis at quas velit ipsam nobis qui aliquid quo accusamus asperiores dolore nostrum ducimus distinctio mollitia possimus, a fugiat debitis corporis voluptate omnis quaerat minus! Id fugiat provident accusantium adipisci, ipsam sunt dolor, optio magni voluptates quos est aperiam doloribus explicabo. Optio labore cumque dignissimos minima, doloribus quam aut, iste ex esse inventore ipsam hic corrupti id eligendi doloremque possimus temporibus earum quod? Numquam consequatur vitae nobis iure, unde officia modi assumenda quaerat impedit placeat nulla, velit dolores! Fuga, ipsa optio saepe deleniti eveniet ea aperiam quos aliquid quidem. Tenetur fugit eius nesciunt doloribus voluptatum blanditiis molestiae ab consequuntur, quaerat quisquam repellat ipsa facere quidem at perferendis illo quos amet est, beatae fugiat accusantium sapiente. Reprehenderit labore veniam tempora illum, ea ipsum molestiae dignissimos ex praesentium quibusdam libero laborum ut ratione neque reiciendis, hic possimus pariatur autem dicta eligendi! Rem necessitatibus harum saepe beatae in id eum eius? Itaque ullam architecto quia consequuntur non minus commodi? Atque tempora dolorum ipsam unde modi inventore provident eum, quos aperiam similique. Delectus libero ullam nisi sequi cupiditate commodi veniam iure aliquam officia! Eaque ratione enim aspernatur fuga eveniet impedit magnam officiis vel quo, similique odit sapiente vitae totam possimus dolorem accusantium amet quis doloribus nostrum est. Ullam repellendus fugiat esse nihil corrupti mollitia, sint maxime iure ratione, ad quos reprehenderit voluptatem atque! Quae ipsa beatae ut a ipsam vitae porro aliquam, nulla voluptatum aperiam aliquid illo autem laboriosam impedit possimus in, libero recusandae quisquam! Laboriosam voluptas beatae eveniet dignissimos, tempora inventore amet odit, explicabo dolores nulla delectus quasi nisi ut repellendus, consequatur officiis facilis voluptatum corporis in exercitationem labore sequi corrupti numquam quis. Id nemo fuga itaque. Quisquam ducimus est, culpa consectetur blanditiis debitis aliquam alias accusantium rem sapiente maiores hic molestiae?
+   </div><br><br><br>
+   <div id="result"></div>
+   <script>
+      window.onload = function() {
+         let element = document.getElementById("my-element");
+         let fontSize = parseFloat(getComputedStyle(element).fontSize);
+         let numberOfLines = element.scrollHeight / fontSize;
+         document.getElementById("result").innerHTML = numberOfLines;
+      }
+   </script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function titleCase(string) {
+        var sentence = string.toLowerCase().split(" ");
+        for(var i = 0; i< sentence.length; i++){
+           sentence[i] = sentence[i][0].toUpperCase() + sentence[i].slice(1);
+        }
+     document.write(sentence.join(" "));
+     return sentence;
+     }
+     titleCase("Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, ullam?");   
+    </script>
+    
+</body>
+</html>

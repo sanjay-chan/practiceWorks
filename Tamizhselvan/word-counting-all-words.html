@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <script>
+    //string is the veriable name
+    var string='';
+    //call the function
+    function getCount(str){
+        //split and filter all words and line braek count the words 
+        return str.split('').filter(function(num){
+            return num!=''
+        }).length;
+       }
+   // console.log(string);
+    document.write('Total words in String:'+ getCount(string));
+   </script> 
+</body>
+</html>

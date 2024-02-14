@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            
+            function countOccurrences(str,word)
+            {
+                
+            let a = str.split(" ");
+        
+
+            let count = 0;
+            for (let i = 0; i < a.length; i++)
+            {
+ 
+            if (word==(a[i]))
+                count++;
+            }
+        
+            return count;
+            }
+            // Driver code
+            let str = "Geeksforgeeks A computerscience portal for geeks ";
+            let word = "geeks";
+            console.log(countOccurrences(str, word));
+            
+        </script>
+        
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function countWords(str) {
+  const arr = str.split(' ');
+
+  return arr.filter(word => word !== '').length;
+}
+
+console.log(countWords('Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis perspiciatis provident eius deleniti labore non dolores modi veniam eos reprehenderit veritatis quis, laboriosam unde libero exercitationem adipisci et dolorem assumenda?')); 
+console.log(countWords('Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis perspiciatis provident eius deleniti labore non dolores modi veniam eos reprehenderit veritatis quis, laboriosam unde libero exercitationem adipisci et dolorem assumenda? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis perspiciatis provident eius deleniti labore non dolores modi veniam eos reprehenderit veritatis quis, laboriosam unde libero exercitationem adipisci et dolorem assumenda?')); 
+
+    </script>
+</body>
+</html>
