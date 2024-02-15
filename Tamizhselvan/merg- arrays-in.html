@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const fruit=['Apple', 'Mango', 'Graps', 'Papaya'];
+        const jucie=['BadamMilk', 'RoseMilk', 'Fresh juice',];
+        const sanwich=['Veg-sanwich', 'Bread Omlate', 'pizza', 'French Frice'];
+        // 2 methods using  for merge array's
+        
+        //1
+        
+        //additional adding for the Jucie
+       const myFruit= fruit.concat(jucie,sanwich, 'juice');
+        console.log(myFruit)
+
+
+        //2
+        // //additional adding for the cheese
+        const allArray=[...fruit, ...jucie, ...sanwich, 'cheese']
+        console.log(allArray)
+    </script>
+</body>
+</html>
