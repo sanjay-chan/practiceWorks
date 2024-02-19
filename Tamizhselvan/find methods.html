@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const shirts=[
+            {color:'pink', size:'s'},
+            {color:'red', size:'m'},
+            {color:'blue', size:'xl'},
+            {color:'blue', size:'xxl'},
+            {color:'green', size:'xxl'},
+        ];
+        const shirt = shirts.find(function(e)
+        {
+            return e.color==='blue' && e.size==='xxl';
+        });
+        console.log(shirt);
+    </script>
+</body>
+</html>

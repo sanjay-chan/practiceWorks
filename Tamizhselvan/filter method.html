@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student=[
+            {name:'mani' , mark:'20'},
+            {name:'nirmal' , mark:'49'},
+            {name:'sathivel' , mark:'63'},
+            {name:'aravind' , mark:'58'},
+            {name:'sri' , mark:'30'},
+            {name:'charan' , mark:'90'},
+            {name:'balaji' , mark:'60'},
+            {name:'karthi' , mark:'89'},
+            {name:'kalki' , mark:'94'}
+        ]
+        let failedStudents = student.filter(function(e)
+        {
+            return e.mark<35;
+        });
+        console.log(failedStudents);
+        let passedStudents = student.filter(function(e)
+        {
+            return e.mark>=35;
+        });
+        console.log(passedStudents);
+    </script>
+</body>
+</html>
