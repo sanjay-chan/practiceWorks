@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //UpperCase
+        let first_name = 'tamizh';
+        c=first_name.toUpperCase();
+        console.log("UpperCase:" +c);
+
+        //LowerCase
+        let last_name = 'SELVAN';
+        c=last_name.toLowerCase();
+        console.log("LowerCase: "+c);
+        
+
+        //slice()
+        let text= "1234567890";
+
+        c=text.slice(); // using  slice method   to get characters from index 2 of 5
+        console.log("slice:" + c); //output is :345
+        
+        //nagative index in slice 
+        c = text.slice(-3);
+        console.log("slice Nagative index:" + c); //output is: 890
+
+        //split() in  string
+
+        let a = "Lorem ipsum dolor sit amet consectetur.";
+        b=a.split(' ') ;// all split
+        console.log("split;"+b);
+
+        c= a.split(1,2);
+        console.log("split;"+c);
+
+        //trim() method
+        let tri_1 = ' laptop   ';
+        console.log("before:" + tri_1);
+        console.log("before:" + tri_1.length);
+
+        //after
+        lap=tri_1.trim();
+        console.log("after:"+lap);
+        console.log("after:" + lap.length);
+
+
+
+        </script>
+</body>
+</html>
