@@ -1,0 +1,177 @@
+h2 {
+  color: #ffffff;
+  text-shadow: 0px 0px 8px #adadadaa;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.Home_page_menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.H_menu_btn {
+  padding: 6px 10px;
+  font-size: 16px;
+}
+.edit_btn,
+.download_btn {
+  background-color: grey;
+  box-shadow: 0 0 10px -2px rgb(0, 0, 0);
+}
+.choose_btn {
+  background-color: rgb(0, 113, 117);
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 1px 1px 10px -2px black;
+}
+.home_Image_preview {
+  width: 95vw;  
+  height: 100vh;
+}
+.Home_Image_Area {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid darkslategray;
+  padding: 2px;
+  /* border-radius: 7px; */
+  overflow: hidden;
+  margin-bottom: 25px;
+  /* background-color: #ffffff; */
+
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 550px;
+  background-color: rgb(33, 33, 33);
+  padding: 25px;
+  box-shadow: 1px 1px 100px -40px black;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 13px;
+  z-index: 1000;
+  color: white;
+}
+.back_div {
+  position: absolute;
+  right: -25px;
+  top: -25px;
+}
+.back_btn {
+  width: 50px;
+  height: 50px;
+  font-size: 23px;
+  padding: 0;
+  border-radius: 25px;
+  margin: 0;
+  background-color: rgb(128, 128, 128);
+  box-shadow: 1px 1px 10px -2px black;
+  transition: all 0.15s;
+}
+.back_btn:hover {
+  background-color: rgb(87, 87, 87);
+  outline: none;
+}
+
+button {
+  margin-right: 10px;
+  background-color: grey;
+}
+.btn_Section {
+  box-shadow: inset 0 0 8px -2px black;
+  border-radius: 12px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}
+
+.Image_Area {
+  position: relative;
+  width: 99%;
+  height: 410px;
+  border: dotted darkslategray;
+  border-radius: 7px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  /* resize: both; */
+  object-fit: scale-down;
+  transition: all 0.5s;
+  /* position: relative; */
+}
+.image_Selection {
+  display: none;
+}
+.resetbtn {
+  padding: 6px 13px;
+  background-color: rgb(71, 71, 71);
+  box-shadow: 1px 1px 10px -2px black;
+}
+.Savebtn {
+  padding: 6px 13px;
+  background-color: green;
+  box-shadow: 1px 1px 10px -2px black;
+}
+.item{
+  /* width: 60px;
+  height: 60px; */
+  background-color: palevioletred;
+  position: relative;
+}
+
+/* .resizer{   
+  position : absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  z-index: 1008;
+}
+.nw{
+  top:-7px;
+  left :-7px;
+  cursor: nw-resize ;
+}
+.ne{
+  top:-7px;
+  right :-7px;
+  cursor: ne-resize ;
+}
+.sw{
+  bottom: -7px;
+  left :-7px;
+  cursor: sw-resize ;
+}
+.se{
+  bottom: -7px;
+  right :-7px;
+  cursor: se-resize ;
+}
+.n{
+  top:-7px;
+  left : 50%;
+  cursor: n-resize;
+}
+.e{
+  top:50%;
+  right :-7px;
+  cursor: e-resize ;
+}
+.s{
+  bottom: -7px;
+  left :50%;
+  cursor: s-resize ;
+}
+.w{
+  top: 50%;
+  left :-5px;
+  cursor: w-resize ;
+} */
