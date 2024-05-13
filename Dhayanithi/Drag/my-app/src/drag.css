@@ -3,17 +3,22 @@
   height: 150vh;
 }
 .form-Area {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 90%;
+  margin-left: 10%;
+  margin-top: 2.5%;
   background-image: url("./assets/61b8ef1c066dbd33950d1e7b_product-template-forms-higher-ed.png");
   background-size:100%;
-  /* border-top: 1px solid black; */
+  border: 1px solid black;
 }
 .Rnd-Div {
   border: 2px dashed black;
   border-radius: 5px;
   position: relative;
-  color: #fff;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 9px;
 }
 .create-btn {
   padding: 7px 13px;
@@ -24,6 +29,7 @@
   font-size: 16px;
   font-family: roboto;
 }
+
 .remove_btn {
   position: absolute;
   top: -13px;
@@ -33,7 +39,21 @@
   background-color: lightgrey;
   font-size: 12px;
   font-weight: bold;
-  padding: 5px 8px;
+  padding: 4px 8px;
   z-index: 1000;
+  cursor: pointer;
+}
+.view_btn {
+  position: absolute;
+  top: -13px;
+  right: 13px;
+  border-radius: 20px;
+  border: 0;
+  background-color: grey;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  z-index: 1000;
+  color: #fff;
   cursor: pointer;
 }
