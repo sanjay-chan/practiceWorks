@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
-function FallBack() {
+function FallBack({ error, resetErrorBoundary }) {
   return (
-    <h1>Something went wrong</h1>
-  )
+    <>
+      <h2>Something went wrong</h2>
+      <p>{error.message}</p>
+      <button onClick={resetErrorBoundary}>Try again</button>
+    </>
+  );
 }
 
-export default FallBack
+export default FallBack;
