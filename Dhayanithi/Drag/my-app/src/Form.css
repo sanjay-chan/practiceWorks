@@ -21,12 +21,13 @@
   padding-top: 9px;
 }
 .create-btn {
-  padding: 7px 13px;
+  padding: 5px 11px;
   border: 1px dashed black;
   border-radius: 5px;
   margin-left: 10px ;
   margin-top: 20px;
   font-size: 16px;
+  font-size: 14px;
   /* font-family: roboto; */
 }
 
