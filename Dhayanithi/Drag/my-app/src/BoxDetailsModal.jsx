@@ -1,8 +1,7 @@
 import React from "react";
 
-function BoxDetailsModal({ box, setBox, index, input, setInput, error, setError}) {
+function BoxDetailsModal({ box, setBox, index, input, setInput}) {
   const handleInputSave = () => {
-    try{
         const updatedBox = [...box];
         updatedBox[index] = {
           ...updatedBox[index],
@@ -11,10 +10,6 @@ function BoxDetailsModal({ box, setBox, index, input, setInput, error, setError}
         };
         setBox(updatedBox);
         setInput("");
-    }catch(err){
-        setError(err);
-    }
-   
   };
 
   const handleEdit = (name) => {

@@ -1,6 +1,4 @@
-import React from "react";
-import { useState } from "react";
-// import { useErrorHandler } from "react-error-boundary";
+import React, { useState } from "react";
 import "./Form.css";
 import DragBox from "./DragBox";
 import BoxDetailsModal from "./BoxDetailsModal";
@@ -9,10 +7,8 @@ function Form({ name }) {
   const [box, setBox] = useState([]);
   const [input, setInput] = useState();
   const [index, setIndex] = useState();
-  const [error, setError] = useState();
-
+  
   const handleCreate = () => {
-    try {
       const newId = box.length + 1;
       const newPositionX = box.length * 20;
       const newData = {
@@ -21,18 +17,14 @@ function Form({ name }) {
         width: 200,
         height: 50,
       };
-      setBox((prevBox) => [...prevBox, newData]);
-    } catch (err) {
-      setError(err);
-    }
+      setBox((prevBox) => [...prevBox,newData]);
+      // setBox((prevBox) => [...prevBox,undefined]);
+      // setBox("ewsidfhwiesd");
+      // setBox(null);
   };
 
-  if (error) {
-    return <Fallback error={error} resetErrorBoundary={() => setError(null)} />;
-  }
-
   const handleSave = () => {
-      console.log(box);
+    console.log(box);
   };
 
   const handleClearAll = () => {
@@ -41,19 +33,18 @@ function Form({ name }) {
 
   return (
     <div className="body">
-      <button className="create-btn" onClick={handleCreate}>
-        Create
-      </button>
-
-      <button className="create-btn" onClick={handleSave}>
-        Save
-      </button>
-
-      <button className="create-btn" onClick={handleClearAll}>
-        Clear All
-      </button>
-
-      <span className="mx-4">{name}</span>
+      <div className="text-center">
+        <button className="create-btn" onClick={handleCreate}>
+          Create
+        </button>
+        <button className="create-btn" onClick={handleSave}>
+          Console
+        </button>
+        <button className="create-btn" onClick={handleClearAll}>
+          Clear All
+        </button>
+        <span className="mx-4">{name}</span>
+      </div>
 
       <BoxDetailsModal
         box={box}
@@ -61,9 +52,7 @@ function Form({ name }) {
         index={index}
         input={input}
         setInput={setInput}
-        error={error}
-        setError={setError}
-        />
+     />
 
       <div className="form-Area">
         <DragBox
