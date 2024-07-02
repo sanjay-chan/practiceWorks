@@ -45,9 +45,9 @@ const TableForm = () => {
   return (
     <div className="columns is-centered mt-6">
     <div className="column is-half">
-      <div class="field">
-        <label class="label">Name</label>
-        <div class="control">
+      <div className="field">
+        <label className="label">Name</label>
+        <div className="control">
           <input
             type="text"
             name="name"
@@ -58,9 +58,9 @@ const TableForm = () => {
           />
         </div>
       </div>
-      <div class="field">
-        <label class="label">Age</label>
-        <div class="control">
+      <div className="field">
+        <label className="label">Age</label>
+        <div className="control">
           <input
             type="number"
             name="age"
