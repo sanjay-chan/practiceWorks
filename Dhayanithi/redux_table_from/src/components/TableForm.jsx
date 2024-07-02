@@ -73,7 +73,7 @@ const TableForm = () => {
       </div>
       <div className="buttons">
         {ID !== null &&
-        <button className="button is-outline is-primary" onClick={handleUpdateRow}>Update Row</button>
+        <button className="button is-outlined is-primary" onClick={handleUpdateRow}>Update Row</button>
          }
         <button className="button is-link" onClick={handleAddRow}>Add Row</button>
       </div>
@@ -94,10 +94,10 @@ const TableForm = () => {
                 >
                   <td>{row.name}</td>
                   <td>{row.age}</td>
-                  <td>
+                  <td style={{width: "141px"}}>
                     <div className="buttons">
                       <button className="button is-small is-success" onClick={() => handleEdit(row.id, index)}>Edit</button>
-                      <button className="button is-small is-warning" onClick={() => handleDeleteRow(row.id)}>Delete</button>
+                      <button className="button is-small is-danger" onClick={() => handleDeleteRow(row.id)}>Delete</button>
                     </div>
                   </td>
                 </tr>
