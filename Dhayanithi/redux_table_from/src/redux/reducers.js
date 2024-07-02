@@ -2,7 +2,6 @@ import { ADD_ROW, UPDATE_ROW, DELETE_ROW } from './actions';
 
 const initialState = {
   rows: [],
-  // formData: { name: '', age: '' },
 };
 
 const tableReducer = (state = initialState, action) => {
@@ -12,18 +11,27 @@ const tableReducer = (state = initialState, action) => {
         ...state,
         rows: [...state.rows, action.payload],
       };
+
     case UPDATE_ROW:
-      const updatedRows = [...state.rows];
-      updatedRows[action.payload.index] = action.payload.row;
       return {
         ...state,
-        rows: updatedRows,
+        rows: state.rows.map(row => {
+          if (row.id === action.payload.id) {
+            return {
+              ...row,
+              ...action.payload.row,
+            };
+          }
+          return row;
+        }),
       };
+
     case DELETE_ROW:
       return {
         ...state,
-        rows: state.rows.filter((_, i) => i !== action.payload),
+        rows: state.rows.filter((row) => row.id !== action.payload),
       };
+
     default:
       return state;
   }

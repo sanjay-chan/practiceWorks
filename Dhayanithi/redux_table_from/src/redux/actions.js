@@ -7,12 +7,12 @@ export const addRow = (row) => ({
   payload: row,
 });
 
-export const updateRow = (index, row) => ({
+export const updateRow = (id, row) => ({
   type: UPDATE_ROW,
-  payload: { index, row },
+  payload: { id, row },
 });
 
-export const deleteRow = (index) => ({
+export const deleteRow = (id) => ({
   type: DELETE_ROW,
-  payload: index,
+  payload: id,
 });

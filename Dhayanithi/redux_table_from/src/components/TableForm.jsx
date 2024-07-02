@@ -5,39 +5,45 @@ import { addRow, updateRow, deleteRow } from "../redux/actions";
 const TableForm = () => {
   const dispatch = useDispatch();
   const rows = useSelector((state) => state.rows);
-  // const formData = useSelector((state) => state.formData);
-
-  const [formState, setFormState] = useState({ name: "", age: "" });
+  
+  const [formState, setFormState] = useState({id: null, name: "", age: "" });
+  const [ID, setID] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormState({
-      ...formState,
-      [name]: value,
-    });
-  };
+    setFormState({...formState, [name]: value,});
+    };
 
   const handleAddRow = () => {
     if (formState.name == '' || formState.age == '' ) {
       alert("Please enter any values in fields")
       return;
     }
-    dispatch(addRow(formState))
-    setFormState({ name: "", age: "" });
+    const id = Date.now().toString();
+    dispatch(addRow({ ...formState, id }));
+
+    if(ID == null ){  
+      setFormState({id: null, name: "", age: "" });
+    }
   };
 
-  const handleUpdateRow = (index) => {
+  const handleEdit = (id, index) => {
+    setID(id);
     setFormState(rows[index]);
-    // dispatch(deleteRow(index));
-    dispatch(updateRow(index, formState));
   };
 
-  const handleDeleteRow = (index) => {
-    dispatch(deleteRow(index));
+  const handleUpdateRow = () => {
+    dispatch(updateRow(ID, formState));
+    setID(null);
+    setFormState({id: null, name: "", age: "" });
+  };
+
+  const handleDeleteRow = (id) => {
+    dispatch(deleteRow(id));
   };
 
   return (
-    <div className="columns is-centered">
+    <div className="columns is-centered mt-6">
     <div className="column is-half">
       <div class="field">
         <label class="label">Name</label>
@@ -56,7 +62,7 @@ const TableForm = () => {
         <label class="label">Age</label>
         <div class="control">
           <input
-            type="text"
+            type="number"
             name="age"
             className="input"
             value={formState.age}
@@ -65,9 +71,14 @@ const TableForm = () => {
             />
         </div>
       </div>
-      <button className="button is-link" onClick={handleAddRow}>Add Row</button>
+      <div className="buttons">
+        {ID !== null &&
+        <button className="button is-outline is-primary" onClick={handleUpdateRow}>Update Row</button>
+         }
+        <button className="button is-link" onClick={handleAddRow}>Add Row</button>
+      </div>
 
-
+         <h1 className="subtitle is-3">Table</h1>
           <table className="table is-primary mt-5 is-fullwidth is-bordered ">
             <thead>
               <tr>
@@ -78,15 +89,20 @@ const TableForm = () => {
             </thead>
             <tbody>
               {rows.map((row, index) => (
-                <tr key={index}>
+                <tr key={index} 
+                className={ID !== null && ID === row.id && "has-background-primary-light" }
+                >
                   <td>{row.name}</td>
                   <td>{row.age}</td>
-                  <td className="buttons">
-                    <button className="button is-small is-success" onClick={() => handleUpdateRow(index)}>Update</button>
-                    <button className="button is-small is-warning" onClick={() => handleDeleteRow(index)}>Delete</button>
+                  <td>
+                    <div className="buttons">
+                      <button className="button is-small is-success" onClick={() => handleEdit(row.id, index)}>Edit</button>
+                      <button className="button is-small is-warning" onClick={() => handleDeleteRow(row.id)}>Delete</button>
+                    </div>
                   </td>
                 </tr>
               ))}
+              {console.log("rows",rows)}
             </tbody>
           </table>
         </div>
